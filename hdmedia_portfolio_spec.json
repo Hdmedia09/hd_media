@@ -1,0 +1,484 @@
+{
+    "developer_profile": {
+        "name": "HD Media",
+        "title": "Software and Context Engineer",
+        "subcategories": [
+            "Full Stack Learner",
+            "UI/UX Animation Enthusiast"
+        ],
+        "tagline": "Turning ideas into immersive digital experiences \ud83d\ude80",
+        "location": "Nigeria",
+        "email": "creative.hdmedia@gmail.com",
+        "phone": "+2348074539436"
+    },
+    "technical_stack": {
+        "core": [
+            "HTML",
+            "CSS",
+            "Tailwind CSS",
+            "JavaScript",
+            "GSAP",
+            "React",
+            "Next.js",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Git",
+            "GitHub"
+        ],
+        "detailed_proficiencies": [
+            {
+                "skill": "HTML",
+                "percentage": 95,
+                "category": "Languages & Frontend"
+            },
+            {
+                "skill": "CSS",
+                "percentage": 90,
+                "category": "Languages & Frontend"
+            },
+            {
+                "skill": "JavaScript",
+                "percentage": 88,
+                "category": "Languages & Frontend"
+            },
+            {
+                "skill": "Tailwind CSS",
+                "percentage": 92,
+                "category": "Languages & Frontend"
+            },
+            {
+                "skill": "React",
+                "percentage": 85,
+                "category": "Languages & Frontend"
+            },
+            {
+                "skill": "Next.js",
+                "percentage": 80,
+                "category": "Languages & Frontend"
+            },
+            {
+                "skill": "Node.js",
+                "percentage": 82,
+                "category": "Database & Backend"
+            },
+            {
+                "skill": "Express.js",
+                "percentage": 78,
+                "category": "Database & Backend"
+            },
+            {
+                "skill": "MongoDB",
+                "percentage": 75,
+                "category": "Database & Backend"
+            },
+            {
+                "skill": "Firebase",
+                "percentage": 72,
+                "category": "Database & Backend"
+            },
+            {
+                "skill": "Git",
+                "percentage": 90,
+                "category": "Deployment & DevOps"
+            },
+            {
+                "skill": "GitHub",
+                "percentage": 85,
+                "category": "Deployment & DevOps"
+            },
+            {
+                "skill": "Vercel",
+                "percentage": 80,
+                "category": "Deployment & DevOps"
+            },
+            {
+                "skill": "Netlify",
+                "percentage": 78,
+                "category": "Deployment & DevOps"
+            },
+            {
+                "skill": "REST API",
+                "percentage": 88,
+                "category": "Cloud & APIs"
+            },
+            {
+                "skill": "Google Cloud",
+                "percentage": 70,
+                "category": "Cloud & APIs"
+            },
+            {
+                "skill": "Render",
+                "percentage": 75,
+                "category": "Cloud & APIs"
+            },
+            {
+                "skill": "VS Code",
+                "percentage": 95,
+                "category": "Tools & Platforms"
+            },
+            {
+                "skill": "Postman",
+                "percentage": 90,
+                "category": "Tools & Platforms"
+            },
+            {
+                "skill": "Figma",
+                "percentage": 85,
+                "category": "Tools & Platforms"
+            },
+            {
+                "skill": "Trello",
+                "percentage": 80,
+                "category": "Tools & Platforms"
+            }
+        ]
+    },
+    "soft_skills": [
+        "Problem Solver",
+        "Team Player",
+        "Detail-Oriented",
+        "Self-Learner",
+        "Creative Thinker"
+    ],
+    "architecture_sections": {
+        "navigation": [
+            "Home",
+            "About",
+            "Skills",
+            "Projects",
+            "Contact"
+        ],
+        "features": {
+            "theme_toggle": "Smooth switching between light/dark mode themes with persistent custom styling properties.",
+            "animations": "GSAP timeline handling for scroll interactions micro-animations, Framer motion wrapper for entering/exiting elements and page transitions."
+        },
+        "timeline_journey": [
+            {
+                "year": "2021",
+                "event": "Started Learning Web Development."
+            },
+            {
+                "year": "2022",
+                "event": "Built Full Stack Projects using MERN."
+            },
+            {
+                "year": "2023",
+                "event": "Contributed to Open Source & YouTube Channel."
+            },
+            {
+                "year": "2024",
+                "event": "Mastered Next.js and UI Animation."
+            }
+        ]
+    },
+    "projects": [
+        {
+            "title": "My Portfolio Website",
+            "description": "A fully responsive personal portfolio website with animations, contact form, dark/light mode toggle, and Firebase integration.",
+            "tech_stack": [
+                "Tailwind CSS",
+                "Framer Motion",
+                "GSAP",
+                "HTML",
+                "JavaScript"
+            ],
+            "features": [
+                "Live Link",
+                "Code Repository Link"
+            ]
+        },
+        {
+            "title": "Heritage India Website",
+            "status": "In Progress",
+            "description": "A static website showcasing India's rich heritage, built with Next.js, REST API, and MongoDB. Features smooth scrolling and responsive design.",
+            "tech_stack": [
+                "Next.js",
+                "REST API",
+                "MongoDB"
+            ],
+            "features": [
+                "Code Repository Link"
+            ]
+        },
+        {
+            "title": "Food Donation Platform",
+            "status": "In Progress",
+            "description": "An in-progress MERN app connecting food donors with NGOs. Features live map, secure login, and real-time notifications.",
+            "tech_stack": [
+                "MongoDB",
+                "Next.js",
+                "Tailwind CSS",
+                "Node.js"
+            ],
+            "features": [
+                "Live Link",
+                "Code Repository Link"
+            ]
+        }
+    ],
+
+    
+  "layout": {
+    "background_color": "#060913",
+    "padding_desktop": "80px 120px",
+    "display": "flex",
+    "flex_direction": "row",
+    "align_items": "center",
+    "justify_content": "space-between",
+    "gap": "60px"
+  },
+  "sections": [
+    {
+      "section_type": "profile_image_container",
+      "width_percentage": "40%",
+      "alignment": "left",
+      "frame": {
+        "shape": "stadium / squircle",
+        "border_radius": "140px",
+        "border_width": "1px",
+        "border_color": "#1e293b",
+        "overflow": "hidden"
+      },
+      "image_content": {
+        "subject": "Male developer sitting at a desk",
+        "environment": "PC setup with green ambient LED strip lighting",
+        "equipment": ["Ultrawide monitor", "Mechanical keyboard", "Gaming chair"],
+        "dominant_colors": ["#00ffcc", "#0a2e24", "#111827"]
+      }
+    },
+    {
+      "section_type": "profile_text_content",
+      "width_percentage": "60%",
+      "alignment": "right",
+      "elements": [
+        {
+          "element_id": "section_header",
+          "text": "About",
+          "font_family": "Inter, sans-serif",
+          "font_size": "18px",
+          "font_weight": "semi-bold",
+          "text_color": "#94a3b8",
+          "text_transform": "none",
+          "margin_bottom": "24px"
+        },
+        {
+          "element_id": "main_heading",
+          "text": "Hi, I'm Vishal",
+          "font_family": "Inter, sans-serif",
+          "font_size": "48px",
+          "font_weight": "bold",
+          "color_type": "gradient",
+          "gradient_details": {
+            "type": "linear",
+            "direction": "to right",
+            "colors": ["#6366f1", "#a855f7", "#ec4899"]
+          },
+          "margin_bottom": "24px"
+        },
+        {
+          "element_id": "biography_paragraphs",
+          "font_family": "Inter, sans-serif",
+          "font_size": "16px",
+          "line_height": "1.6",
+          "text_color": "#94a3b8",
+          "margin_bottom": "32px",
+          "paragraphs": [
+            {
+              "text": "A Full Stack Developer driven by passion and curiosity. I design interactive UI/UX, craft scalable web solutions, and love to bring motion and interactivity to life with animation tools like GSAP and Framer Motion.",
+              "bold_phrases": ["Full Stack Developer", "GSAP", "Framer Motion"],
+              "bold_phrase_color": "#f8fafc"
+            },
+            {
+              "text": "I'm on a journey of continuous learning, currently exploring the depths of Next.js 14 and AI-integrated web development.",
+              "bold_phrases": ["Next.js 14"],
+              "bold_phrase_color": "#f8fafc"
+            }
+          ]
+        },
+        {
+          "element_id": "technical_skills_tags",
+          "display": "flex",
+          "flex_wrap": "wrap",
+          "gap": "10px",
+          "margin_bottom": "20px",
+          "tag_style": {
+            "background_color": "#111827",
+            "border": "1px solid #1f2937",
+            "border_radius": "20px",
+            "padding": "6px 14px",
+            "font_size": "13px",
+            "font_weight": "medium",
+            "text_color": "#e5e7eb"
+          },
+          "items": [
+            "HTML",
+            "CSS",
+            "Tailwind CSS"
+          ]
+        },
+        {
+          "element_id": "interactive_modules",
+          "items": [
+            "JavaScript",
+            "GSAP",
+            "React",
+            "Next.js",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Firebase"
+          ],
+          "interactive_modules": [
+            {
+                "module_name": "Live Code Terminal / Status Box",
+                "functionality": "A stylized, miniature terminal window that mimics a developer IDE.",
+                "visual_elements": [
+                    "Three window control dots (red, yellow, green) in the top-left corner.",
+                    "A 'Live Status' indicator with a pulsing green neon dot reading: 'STATUS: Open for Freelance & Collaboration'."
+                ],
+                "animation": "A typewriter or terminal-log execution effect that cycles through core developer tech stacks or lines of structural object configurations (e.g., const developer = { skills: ['Next.js', 'Three.js', 'GSAP'] })."
+            },
+            {
+                "module_name": "Micro Interactive Audio Visualizer or Metric Callout",
+                "functionality": "Bite-sized, clean technical grid stats that display dynamic info.",
+                "metrics": [
+                    {
+                        "label": "EXPERIENCE",
+                        "value": "4+ Years"
+                    },
+                    {
+                        "label": "CURRENT_FOCUS",
+                        "value": "WebGPU / Creative Coding"
+                    }
+                ],
+                "interaction": "Smooth hover micro-animations (e.g., slight elevation, border color change to the brand's vivid orange)."
+            }
+          ],
+          "behavioral_guardrails": {
+            "do_not_remove": "DO NOT remove or hide the far-right vertical outlined text ('CREATE \u2022 CODE \u2022 REFACTOR'). This widget must coexist alongside it.",
+            "do_not_add": "DO NOT introduce profile pictures, stock photographic images, heavy solid blocks, or colorful complex graphics.",
+            "responsiveness": "The widget should scale elegantly on smaller viewports, stacking neatly under the main header typography or transitioning out cleanly if screen space is constrained."
+          }
+        },
+        {
+    "end of home page design metadata": {
+        "title": "Creative Developer Portfolio - Hero Bottom Section Polish",
+        "section": "Hero Left Column - Bottom Footer Layout",
+        "target_component": "Static Horizontal Bento Layout (Option 2)",
+        "design_aesthetic": "Brutalist minimalism, rigid alignment, premium layout, completely static"
+    },
+    "core_directive": {
+        "constraint": "CRITICAL: Absolutely NO animations, tickers, or moving text are allowed in this component. The webpage already has adequate motion. This section must be entirely static and serve as a visual anchor to ground the bottom left of the page.",
+        "objective": "Transform the currently unaligned subheadline ('Turning ideas into Immersive digital experiences') and the loose social media icons into a unified, premium horizontal layout bar."
+    },
+    "layout_architecture": {
+        "grouping": "Enclose the subheadline and the social icons inside a single, dedicated horizontal block or bar at the very bottom of the left column.",
+        "css_structure": {
+            "display": "flex or grid",
+            "alignment": "align-items: center",
+            "spacing": "Utilize precise, deliberate padding and crisp spacing. Use a 'margin-top: auto' layout strategy on the container to firmly weight it to the bottom margin of the page."
+        }
+    },
+    "visual_styling_details": {
+        "subheadline_typography": "Slightly increase the font size and contrast of the text so it matches the premium weight of the main header titles. Ensure perfect baseline alignment.",
+        "separator_elements": "Introduce thin, sharp vertical divider lines (e.g., '|' or solid 1px low-contrast borders) between the subheadline and the social icons, and between the icons themselves.",
+        "social_icons_integration": "Instead of letting the social icons float raw, convert them into clean, structured text-and-icon pairs (e.g., '[GH] GitHub', '[LN] LinkedIn') or place them inside uniform, ultra-subtle geometric bounding boxes.",
+        "color_palette": "Stick rigidly to the existing theme: high-contrast white text, muted grey for secondary technical labels, and very selective, razor-sharp vivid orange accents on hover states only."
+    },
+    "behavioral_guardrails": {
+        "prohibited": [
+            "DO NOT add marquees, scrolling text loops, or typewriter animations here.",
+            "DO NOT alter the main 'CREATIVE DEVELOPER' heading sizes.",
+            "DO NOT disrupt the right-side layout configurations built previously."
+        ]
+    },
+    "inspiration_reference": {
+        "reference_site": "Niccolò Miranda (niccolomiranda.com) & Linus Rogge (linusrogge.com)",
+        "layout_technique": "Editorial-style digital design using rigid grid borders, static text blocks, and precise structural lines to organize footer information cleanly without resorting to movement."
+    }
+},
+
+    {
+    "project_metadata": {
+        "title": "Creative Developer Portfolio - Hero Section Layout Tuning",
+        "phase": "Layout Refinement and Spacing Calibration",
+        "objective": "Resolve minor layout crowding and optimize macro negative space without altering the HTML structure."
+    },
+    "spacing_and_positioning_adjustments": {
+        "left_column_hero_text": {
+            "issue": "Main title ('CREATIVE DEVELOPER') sits too high and crowds the header navigation.",
+            "fix": "Increase top padding or apply a slight downward margin shift to lower the vertical center of the left text column, aligning it perfectly with the visual center of the right widgets."
+        },
+        "right_column_dashboard_widgets": {
+            "issue": "The terminal window and metrics box are slightly too large, competing with the primary typography for dominance.",
+            "fix": "Scale down both widget components uniformly by 10% to 15%. This instantly introduces breathing room between the widgets and the far-right vertical marquee text."
+        },
+        "bottom_horizontal_bento_bar": {
+            "issue": "The new footer bar is pinned too closely beneath the main text and widgets, making the layout feel tight vertically.",
+            "adjustments": [
+                {
+                    "property": "margin-top",
+                    "action": "Increase the margin-top significantly to push the bento bar firmly toward the bottom viewport boundary, establishing a clear visual separation from the hero core elements."
+                },
+                {
+                    "property": "color / opacity",
+                    "action": "Slightly increase the contrast/brightness of the dark gray text and icon strings inside the bar to improve legibility against the true black background."
+                }
+            ]
+        }
+    },
+    "design_guardrails": {
+        "do_not_change": "DO NOT modify the current CSS structural layout (CSS Grid columns or flex grouping). The architectural layout is correct.",
+        "do_not_add_motion": "Maintain the strict rule of zero animations or movement in the bottom footer bento bar.",
+        "expected_outcome": "The hero section should feel spacious, intentionally balanced, and highly editorial, ensuring the loud typography has room to breathe relative to the technical UI details."
+    }
+},
+
+        {
+          "element_id": "soft_skills_tags",
+          "display": "flex",
+          "flex_wrap": "wrap",
+          "gap": "10px",
+          "margin_bottom": "40px",
+          "tag_style": {
+            "background_color": "transparent",
+            "border": "1px solid #f97316",
+            "border_radius": "6px",
+            "padding": "6px 14px",
+            "font_size": "13px",
+            "font_weight": "medium",
+            "text_color": "#f97316"
+          },
+          "items": [
+            "Problem Solver",
+            "Team Player",
+            "Detail-Oriented",
+            "Self-Learner",
+            "Creative Thinker"
+          ]
+        },
+        {
+          "element_id": "cta_button",
+          "text": "Resume",
+          "has_icon": true,
+          "icon_type": "download_arrow",
+          "display": "inline-flex",
+          "align_items": "center",
+          "gap": "8px",
+          "background_color": "#ffffff",
+          "text_color": "#0f172a",
+          "font_size": "15px",
+          "font_weight": "semi-bold",
+          "padding": "10px 24px",
+          "border_radius": "8px",
+          "border": "none",
+          "cursor": "pointer"
+        }
+      ]
+    }
+  ]
+}
