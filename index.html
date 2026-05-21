@@ -1,269 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRO MedTech</title>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="pro.css" />
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-   <script src="pro.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD MEDIA | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!--PRE PAGE ANIMATION (LOADERRRR)-->
-<div id="loader">
-  <div class="loader-inner">
-    
-    <svg viewBox="0 0 300 200" class="logo">
-      <!-- H -->
-      <path d="M50 40 V160 M50 100 H100 M100 40 V160" />
-      
-      <!-- D -->
-      <path d="M150 40 V160 M150 40 Q240 100 150 160" />
-    </svg>
+    <div class="custom-cursor"></div>
 
-    <p class="tagline">...redefining creativity</p>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <div class="terminal-title">bash — 80x24</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <!-- Lines will be injected here via JS -->
+                </div>
+            </div>
+        </div>
+        <div class="post-terminal-message">
+            <h1 class="post-terminal-logo">HD MEDIA<span>.</span></h1>
+            <p class="post-terminal-tagline">...redefining creativity.</p>
+        </div>
+    </div>
 
-  </div>
-</div>
-
-
-
-  <!-- Navbar -->
-  <header>
     <nav class="navbar">
-      <div class="logo">CodeinHD</div>
-      <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact me</a></li>
-      </ul>
-      <a href="#" class="btn hire-btn">Contact Me</a>
+        <div class="nav-logo">HD MEDIA<span>.</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Work</a>
+            <a href="#about">About</a>
+            <a href="mailto:creative.hdmedia@gmail.com" class="nav-cta">CodeinHD</a>
+        </div>
     </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="designation">Yello I am</div>
-      <div class="meme">HD_Media</div>
-        <h1 class="title">A Software Developer</h1>
-       <h2 class="prep">A</h2>
-      <h1 class="title">Software Developer.</h1>
-     
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-widgets">
+                    <!-- Widget 1: Status Box -->
+                    <div class="floating-widget status-box">
+                        <div class="widget-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="widget-content">
+                            <div class="status-indicator">
+                                <span class="pulse-dot"></span>
+                                <span class="status-text">STATUS: OPEN FOR COLLABORATION</span>
+                            </div>
+                            <div class="terminal-mini">
+                                <span class="mini-prompt">></span> <span class="mini-text"></span><span class="cursor">_</span>
+                            </div>
+                        </div>
+                    </div>
 
-      <!-- Social Icons -->
-      <div class="socials">
-            <a href="#"><i class="bi bi-youtube"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-whatsapp"></i></a>
-        
-      </div>
+                    <!-- Widget 2: Metric Box -->
+                    <div class="floating-widget metric-box">
+                        <div class="metric-item">
+                            <span class="metric-label">EXPERIENCE</span>
+                            <span class="metric-value">4+ YEARS</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">CURRENT_FOCUS</span>
+                            <span class="metric-value">CREATIVE CODING</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-banner">
+                    <div class="banner-track">
+                        <span>INNOVATE • DESIGN • CODE • DEVELOP • REPEAT • </span>
+                        <span>INNOVATE • DESIGN • CODE • DEVELOP • REPEAT • </span>
+                        <span>INNOVATE • CREATE • CODE • REFACTOR • REJUVENATE • </span>
+                    </div>
+                </div>
+                <p class="hero-sub">Hi, I'm HD Media, A</p>
+                <h1 class="hero-title">
+                    <span class="reveal">CREATIVE</span><br>
+                    <span class="reveal text-accent">DEVELOPER</span>
+                </h1>
+                <div class="hero-footer">
+                    <div class="footer-bar">
+                        <p class="tagline">Turning ideas into immersive digital experiences</p>
+                        <div class="footer-separator"></div>
+                        <div class="socials">
+                            <a href="#" class="social-link"><i class="bi bi-github"></i> <span class="social-code">[GH]</span> GITHUB</a>
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i> <span class="social-code">[LN]</span> LINKEDIN</a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i> <span class="social-code">[IG]</span> INSTAGRAM</a>
+                            <a href="#" class="social-link"><i class="bi bi-youtube"></i> <span class="social-code">[YT]</span> YOUTUBE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-     
-      <!-- Buttons -->
-      <div class="buttons">
-        <a href="#" class="btn primary">Hire Me</a>
-        <a href="#" class="btn secondary">Download CV</a>
-      </div>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">A Bit About Me<span>.</span></h2>
+                <p class="about-text">
+                    I am a Software Engineer passionate about developing structured, user-focused web applications. 
+                    My journey involves a deep emphasis on clean code, thoughtful design, and effective project management.
+                </p>
+                <div class="skills-grid">
+                    <div class="skill">HTML</div>
+                    <div class="skill">Next.js</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">MYSQL</div>
+                    <div class="skill">Tailwind</div>
+                    <div class="skill">GSAP</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JAVASCRIPT</div>
+                    <div class="skill">GIT</div>
+                    <div class="skill">GITHUB</div>
+                </div>
+            </div>
+        </section>
 
-      <!-- Stats -->
-      <div class="stats">
-        <div class="stat-box">
-          <h3>4+</h3>
-          <p>Experiences</p>
+        <!-- Horizontal Projects Section -->
+        <section id="projects" class="work-wrapper">
+            <div class="horizontal-scroll">
+                <div class="project-card start-card">
+                    <h2 class="huge-text">LATEST<br>WORKS</h2>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-num">01</span>
+                        <h3>Heritage India</h3>
+                        <p>A static website showcasing India's rich heritage.</p>
+                        <a href="#" class="view-btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-num">02</span>
+                        <h3>Food Donation</h3>
+                        <p>MERN app connecting food donors with NGOs.</p>
+                        <a href="#" class="view-btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-num">03</span>
+                        <h3>My Portfolio</h3>
+                        <p>Fully responsive personal portfolio with GSAP.</p>
+                        <a href="#" class="view-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-glass">
+                <div class="footer-top">
+                    <h2 class="footer-heading">READY TO <span class="text-accent">COLLABORATE?</span></h2>
+                    <p class="footer-sub">Let's build something exceptional together.</p>
+                </div>
+                
+                <div class="footer-contact-info">
+                    <a href="mailto:creative.hdmedia@gmail.com" class="footer-email">
+                        creative.hdmedia@gmail.com
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>SOCIALS</h4>
+                        <div class="social-links">
+                            <a href="#">GITHUB</a>
+                            <a href="#">LINKEDIN</a>
+                            <a href="#">INSTAGRAM</a>
+                            <a href="#">TWITTER</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>NAVIGATION</h4>
+                        <div class="nav-links-footer">
+                            <a href="#home">HOME</a>
+                            <a href="#projects">WORK</a>
+                            <a href="#about">ABOUT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2024 HD MEDIA. ALL RIGHTS RESERVED.</p>
+                    <p>CRAFTED WITH PRECISION BY <span class="text-accent">HD MEDIA</span></p>
+                </div>
+            </div>
         </div>
-        <div class="stat-box">
-          <h3>4+</h3>
-          <p>Project done</p>
-        </div>
-        <div class="stat-box">
-          <h3>40+</h3>
-          <p>Happy Clients</p>
-        </div>
-      </div>
-    </div>
+    </footer>
 
-    <div class="hero-image">
-         
-      <img src="profile.jpg" alt="Profile Picture" class="animated-img">
-    </div>
-  </section>
-
-   <!-- Services Section -->
-<section id="services" class="services">
-  <div class="section-header">
-    <h2> Our Services</h2>
-    <p>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
-  </div>
-
-  <div class="services-grid">
-    <div class="service-card">
-      <i class="bi bi-phone"></i>
-      <h3>App Design</h3>
-      <p>Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-    </div>
-    <div class="service-card">
-      <i class="bi bi-laptop"></i>
-      <h3>Web Development</h3>
-      <p>Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-    </div>
-    <div class="service-card">
-      <i class="bi bi-gear"></i>
-      <h3>Strategic Planning</h3>
-      <p>Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-    </div>
-    <div class="service-card">
-      <i class="bi bi-bar-chart"></i>
-      <h3>SEO</h3>
-      <p>Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-    </div>
-    <div class="service-card">
-      <i class="bi bi-lightbulb"></i>
-      <h3>Brand Strategy</h3>
-      <p>Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-    </div>
-    <div class="service-card">
-      <i class="bi bi-people"></i>
-      <h3>Consulting</h3>
-      <p>Lorem ipsum dolor sit amet. Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- About Section -->
-<section id="about" class="aboutme py-5">
-  <div class="container">
-
-    <!-- Section Heading -->
-    <div class="text-center mb-5">
-      <h2 class="section-title text-white fw-bold">About Me</h2>
-      <p class="section-subtitle text-muted">
-        Software Developers, carefully crafting the technological world 
-        with code as paintbrushes — <strong class="text-white">THE TECH SHAKESPEARES</strong>
-      </p>
-    </div>
-
-    <!-- About Content -->
-    <div class="row align-items-center">
-      
-      <!-- Profile Image (Left Side) -->
-      <div class="col-6 text-center">
-        <div class="profile-pic-wrapper">
-          <div class="profile-shade"></div>
-          <img src="about.jpeg" alt="Profile Picture" 
-               class="profile-img img-fluid rounded-3 shadow-lg" style="max-width:350px;">
-        </div>
-      </div>
-
-      <!-- Text Content (Right Side) -->
-      <div class="col-6 text-white">
-        <div class="about-copy">
-          <h2 class="hello mb-3 fw-semibold">Hello, I am HD</h2>
-          <p class="lead">
-            I specialize in building scalable and creative solutions for
-            the modern digital world. With a strong foundation in
-            software development, I aim to bridge the gap between
-            innovation and user needs.
-          </p>
-          <p>
-            My focus is on crafting user-centered applications, 
-            ensuring performance, accessibility, and a touch of 
-            creativity that makes technology feel human.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<section id="contact" class="contact py-5">
-  <div class="container my-5">
-    <div class="text-center mb-4">
-      <h2>Contact me</h2>
-      <p class="text-muted">Cultivating Connections: Reach Out And Connect With Me</p>
-    </div>
-
-    <form class="row g-3">
-      <!-- Name -->
-      <div class="col-md-6">
-        <div class="input-group">
-          <span class="input-group-text"><i class="bi bi-person"></i></span>
-          <input type="text" class="form-control" placeholder="Name">
-        </div>
-      </div>
-
-      <!-- Email -->
-      <div class="col-md-6">
-        <div class="input-group">
-          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-          <input type="email" class="form-control" placeholder="Email">
-        </div>
-      </div>
-
-      <!-- Phone -->
-      <div class="col-md-6">
-        <div class="input-group">
-          <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-          <input type="text" class="form-control" placeholder="Phone Number">
-        </div>
-      </div>
-
-      <!-- Service -->
-      <div class="col-md-6">
-        <div class="input-group">
-          <span class="input-group-text"><i class="bi bi-gear"></i></span>
-          <select class="form-select">
-            <option selected>Service Of Interest</option>
-            <option>UI/UX Design</option>
-            <option>Web Development</option>
-            <option>Consulting</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Timeline -->
-      <div class="col-md-6">
-        <div class="input-group">
-          <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
-          <input type="text" class="form-control" placeholder="Timeline">
-        </div>
-      </div>
-
-      <!-- Project Details -->
-      <div class="col-md-6">
-        <div class="input-group">
-          <span class="input-group-text"><i class="bi bi-chat-left-text"></i></span>
-          <textarea class="form-control" placeholder="Project Details..." rows="3"></textarea>
-        </div>
-      </div>
-
-      <!-- Send Button -->
-      <div class="col-12 text-end">
-        <button type="submit" class="btn btn-primary send-btn">Send</button>
-      </div>
-    </form>
-  </div>
-</section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
+    <!-- GSAP & Lenis Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-
