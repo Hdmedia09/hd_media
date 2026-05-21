@@ -156,19 +156,27 @@
         "timeline_journey": [
             {
                 "year": "2021",
-                "event": "Started Learning Web Development."
+                "phase": "Discovery Phase",
+                "achievement": "Started Learning Web Development",
+                "context": "Initiated foundational coding path, focusing on core web fundamentals, markup styling, and semantic layouts to build initial static interfaces."
             },
             {
                 "year": "2022",
-                "event": "Built Full Stack Projects using MERN."
+                "phase": "Full-Stack Architecture",
+                "achievement": "Built Full Stack Projects using MERN",
+                "context": "Advanced into comprehensive software engineering. Constructed database-driven web applications using MongoDB, Express.js, React, and Node.js."
             },
             {
                 "year": "2023",
-                "event": "Contributed to Open Source & YouTube Channel."
+                "phase": "Open Source & Technical Media",
+                "achievement": "Contributed to Open Source & YouTube Channel",
+                "context": "Expanded tech community footprint by contributing production-ready code to open repos and creating technical video documentation detailing complex architectural workflows."
             },
             {
                 "year": "2024",
-                "event": "Mastered Next.js and UI Animation."
+                "phase": "Specialized Creative Engineering",
+                "achievement": "Mastered Next.js and UI Animation",
+                "context": "Transitioned to high-end creative coding. Focused entirely on performance-driven React frameworks, Server-Side Rendering (SSR), Web Vitals optimization, and sophisticated, motion-engineered user interfaces."
             }
         ]
     },
@@ -435,6 +443,213 @@
         "do_not_change": "DO NOT modify the current CSS structural layout (CSS Grid columns or flex grouping). The architectural layout is correct.",
         "do_not_add_motion": "Maintain the strict rule of zero animations or movement in the bottom footer bento bar.",
         "expected_outcome": "The hero section should feel spacious, intentionally balanced, and highly editorial, ensuring the loud typography has room to breathe relative to the technical UI details."
+    }
+},
+
+        {
+    "project_metadata": {
+        "title": "Creative Developer Portfolio - About Page Blueprint",
+        "section": "Complete About Page Layout Design",
+        "design_aesthetic": "Dark mode brutalism, tech-dashboard minimalism, rigid structural grids",
+        "color_palette": {
+            "background": "#000000 (Pure Black)",
+            "primary_text": "#FFFFFF (High Contrast White)",
+            "accent_color": "Vivid Neon Orange",
+            "secondary_text": "Muted Technical Slate Gray"
+        }
+    },
+    "page_structure": {
+        "section_1_hero": {
+            "layout": "2-Column Asymmetric Grid Split",
+            "left_side": {
+                "content": "Ultra-bold, massive editorial typography introducing your identity and engineering core beliefs.",
+                "styling": "Matches the heavy font weight of 'CREATIVE DEVELOPER' from the landing page."
+            },
+            "right_side": {
+                "component": "A stylized 'Developer Manifest' card box.",
+                "details": "A translucent glassmorphic box with a thin, crisp border. It formats your personal details like an open configurations file or system status read-out (e.g., Local Time, Coordinates, Current Availability, Core Environment Configuration)."
+            }
+        },
+        "section_2_workflow_matrix": {
+            "layout": "3-Column Rigid Grid (The Manifested Triad)",
+            "headers": ["01 // CREATE", "02 // CODE", "03 // REFACTOR"],
+            "description": "Directly maps back to the homepage vertical marquee concepts. Each column features a static, clean bulleted breakdown of your technical tools, execution workflows, and testing/optimization principles.",
+            "styling": "Columns are separated by thin, low-contrast 1px vertical borders. Section headers use the brand's vivid orange on highlight."
+        },
+        "section_3_journey_timeline": {
+            "layout": "2-Column Timeline Grid",
+            "left_side": "A vertical stack of bold milestones or years (e.g., 2026, 2024, 2022).",
+            "right_side": "Clean, static description blocks mapping to each milestone containing roles, achievements, and technical contributions.",
+            "interaction_rule": "Utilize purely static visibility or clean CSS transitions. No chaotic tracking animations or scrolling ticker tapes."
+        }
+    },
+    "behavioral_guardrails": {
+        "prohibited": [
+            "DO NOT use traditional, generic center-aligned about page columns.",
+            "DO NOT insert standard circular avatar image placeholder blocks.",
+            "DO NOT introduce fluid, bouncing animations that violate the layout's rigid, premium tech-grid design rules.",
+            "DO NOT allow layout elements to collide with global navigation headers."
+        ],
+        "required": [
+            "Maintain the same margins, borders, and paddings used in the landing page bento layout.",
+            "Keep interactive motion strictly confined to micro-hover states (e.g., borders crisping up or slight orange text shifts on focused items)."
+        ]
+    }
+},
+
+       {
+    "llm_instruction_parameters": {
+        "mode": "Strict Implementation Engine",
+        "hallucination_prevention_level": "CRITICAL",
+        "instruction": "Parse this file object-by-object. Every property value contains explicit CSS, HTML, and layout directives that MUST be followed literally. Do not improvise layouts, styles, colors, or structural patterns."
+    },
+    "global_theme_sync": {
+        "background_color": "#000000",
+        "font_family_primary": "Sans-serif bold (matching 'CREATIVE DEVELOPER' scale)",
+        "font_family_mono": "Monospace (matching the code widgets)",
+        "color_accent": "#FF5700 (Vivid Tech Orange)",
+        "color_subdued": "#555555 (Muted Slate Gray for secondary details)"
+    },
+    "ui_component_blueprint": {
+        "section_wrapper": {
+            "html_element": "section",
+            "class_identifier": "about-journey-section",
+            "layout_model": "CSS Flexbox",
+            "flex_direction": "column",
+            "padding": "80px 10% 80px 5%",
+            "gap": "48px"
+        },
+        "header_element": {
+            "html_element": "h2",
+            "text_content": "MY JOURNEY",
+            "css_styling": {
+                "font_size": "clamp(2rem, 4vw, 5rem)",
+                "text_transform": "uppercase",
+                "font_weight": "900",
+                "color": "#FFFFFF",
+                "letter_spacing": "-0.03em",
+                "margin_bottom": "24px"
+            }
+        },
+        "timeline_container": {
+            "html_element": "div",
+            "class_identifier": "timeline-stack",
+            "layout_model": "CSS Flexbox",
+            "flex_direction": "column",
+            "gap": "32px",
+            "width": "100%",
+            "max_width": "1200px"
+        },
+        "timeline_rows": [
+            {
+                "row_id": "milestone_2021",
+                "html_structure": "div.timeline-row",
+                "css_layout": "display: grid; grid-template-columns: 80px 40px 1fr; align-items: center; gap: 24px; padding: 24px 0; border-bottom: 1px solid #222222;",
+                "data_injection": {
+                    "column_1_year": {
+                        "html": "span.timeline-year",
+                        "text": "2021",
+                        "css": "font-family: monospace; font-size: 1.25rem; color: #555555; font-weight: bold;"
+                    },
+                    "column_2_icon": {
+                        "html": "div.timeline-icon-box",
+                        "svg_graphic_directive": "Clean line-art SVG vector star/sparkle icon. No complex gradient layers or fills. Path color: #FF5700 (vivid orange).",
+                        "css": "display: flex; align-items: center; justify-content: center;"
+                    },
+                    "column_3_content": {
+                        "html": "div.timeline-text-block",
+                        "css": "display: flex; flex-direction: column; gap: 8px;",
+                        "child_nodes": {
+                            "title": "h3.milestone-title { text: 'Started Learning Web Development'; font-size: 1.75rem; color: #FFFFFF; font-weight: 700; }",
+                            "paragraph": "p.milestone-description { text: 'Initiated foundational coding path, focusing on core web fundamentals, markup styling, and semantic layouts to build initial static interfaces.'; font-size: 1rem; color: #555555; line-height: 1.6; max-width: 700px; }"
+                        }
+                    }
+                }
+            },
+            {
+                "row_id": "milestone_2022",
+                "html_structure": "div.timeline-row",
+                "css_layout": "display: grid; grid-template-columns: 80px 40px 1fr; align-items: center; gap: 24px; padding: 24px 0; border-bottom: 1px solid #222222;",
+                "data_injection": {
+                    "column_1_year": {
+                        "html": "span.timeline-year",
+                        "text": "2022",
+                        "css": "font-family: monospace; font-size: 1.25rem; color: #555555; font-weight: bold;"
+                    },
+                    "column_2_icon": {
+                        "html": "div.timeline-icon-box",
+                        "svg_graphic_directive": "Clean line-art SVG code brackets character element (</>). Path color: #FFFFFF.",
+                        "css": "display: flex; align-items: center; justify-content: center;"
+                    },
+                    "column_3_content": {
+                        "html": "div.timeline-text-block",
+                        "css": "display: flex; flex-direction: column; gap: 8px;",
+                        "child_nodes": {
+                            "title": "h3.milestone-title { text: 'Built Full Stack Projects using MERN'; font-size: 1.75rem; color: #FFFFFF; font-weight: 700; }",
+                            "paragraph": "p.milestone-description { text: 'Advanced into comprehensive software engineering. Constructed database-driven web applications using MongoDB, Express.js, React, and Node.js.'; font-size: 1rem; color: #555555; line-height: 1.6; max-width: 700px; }"
+                        }
+                    }
+                }
+            },
+            {
+                "row_id": "milestone_2023",
+                "html_structure": "div.timeline-row",
+                "css_layout": "display: grid; grid-template-columns: 80px 40px 1fr; align-items: center; gap: 24px; padding: 24px 0; border-bottom: 1px solid #222222;",
+                "data_injection": {
+                    "column_1_year": {
+                        "html": "span.timeline-year",
+                        "text": "2023",
+                        "css": "font-family: monospace; font-size: 1.25rem; color: #555555; font-weight: bold;"
+                    },
+                    "column_2_icon": {
+                        "html": "div.timeline-icon-box",
+                        "svg_graphic_directive": "Clean line-art SVG terminal screen layout symbol box. Path color: #FFFFFF.",
+                        "css": "display: flex; align-items: center; justify-content: center;"
+                    },
+                    "column_3_content": {
+                        "html": "div.timeline-text-block",
+                        "css": "display: flex; flex-direction: column; gap: 8px;",
+                        "child_nodes": {
+                            "title": "h3.milestone-title { text: 'Contributed to Open Source & YouTube Channel'; font-size: 1.75rem; color: #FFFFFF; font-weight: 700; }",
+                            "paragraph": "p.milestone-description { text: 'Expanded tech community footprint by contributing production-ready code to open repos and creating technical video documentation detailing complex architectural workflows.'; font-size: 1rem; color: #555555; line-height: 1.6; max-width: 700px; }"
+                        }
+                    }
+                }
+            },
+            {
+                "row_id": "milestone_2024",
+                "html_structure": "div.timeline-row",
+                "css_layout": "display: grid; grid-template-columns: 80px 40px 1fr; align-items: center; gap: 24px; padding: 24px 0; border-bottom: 1px solid #222222;",
+                "data_injection": {
+                    "column_1_year": {
+                        "html": "span.timeline-year",
+                        "text": "2024",
+                        "css": "font-family: monospace; font-size: 1.25rem; color: #FF5700; font-weight: 900;"
+                    },
+                    "column_2_icon": {
+                        "html": "div.timeline-icon-box",
+                        "svg_graphic_directive": "Clean line-art SVG modular microchip or geometric node network connection logo. Path color: #FF5700.",
+                        "css": "display: flex; align-items: center; justify-content: center;"
+                    },
+                    "column_3_content": {
+                        "html": "div.timeline-text-block",
+                        "css": "display: flex; flex-direction: column; gap: 8px;",
+                        "child_nodes": {
+                            "title": "h3.milestone-title { text: 'Mastered Next.js and UI Animation'; font-size: 1.75rem; color: #FFFFFF; font-weight: 700; }",
+                            "paragraph": "p.milestone-description { text: 'Transitioned to high-end creative coding. Focused entirely on performance-driven React frameworks, Server-Side Rendering (SSR), Web Vitals optimization, and sophisticated, motion-engineered user interfaces.'; font-size: 1rem; color: #555555; line-height: 1.6; max-width: 700px; }"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "behavioral_guardrails": {
+        "strict_prohibitions": [
+            "DO NOT build massive, card-shaped rounded boxes that look like the previous dashboard mockup templates.",
+            "DO NOT wrap items in heavy gradient drop-shadow glows or blue/purple backgrounds.",
+            "DO NOT change the global page theme to off-black. It must remain #000000 absolute black.",
+            "DO NOT center-align the timeline headers. Alignment must remain left-heavy, matching the editorial design language of the landing page titles."
+        ]
     }
 },
 

@@ -1,0 +1,167 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD MEDIA | About</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+
+    <nav class="navbar">
+        <div class="nav-logo">HD MEDIA<span>.</span></div>
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#projects">Work</a>
+            <a href="#about" class="active">About</a>
+            <a href="mailto:creative.hdmedia@gmail.com" class="nav-cta">CodeinHD</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section 1: Asymmetric Hero Split (The Introduction) -->
+        <section id="about-hero" class="about-hero-section">
+            <div class="about-hero-left">
+                <h1 class="about-hero-title">WEAVING HIGH-PERFORMANCE CODE INTO INTERACTIVE ART<span>.</span></h1>
+            </div>
+            <div class="about-hero-right">
+                <div class="developer-manifest-card">
+                    <div class="manifest-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <div class="manifest-title">developer.json</div>
+                    </div>
+                    <div class="manifest-body">
+                        <pre><code>
+{
+  "name": "HD Media",
+  "title": "Software and Context Engineer",
+  "location": "Nevada, USA",
+  "operating_language": "Javascript, Lenis, Next/Node",
+  "current_focus": "Next.js 14, React",
+  "availability": "Paid Freelance & Collabo",
+  "local_time": "<span id="local-time"></span>"
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Interactive Timelines (The Journey) -->
+        <section id="about-journey" class="about-journey-section">
+            <h2 class="section-title">MY JOURNEY<span>.</span></h2>
+            <div class="timeline-grid">
+                <div class="timeline-years">
+                    <!-- Years will be populated by JS -->
+                </div>
+                <div class="timeline-content">
+                    <div id="timeline-detail">
+                        <!-- Content will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Workflow Matrix (How You Think) -->
+        <section id="about-workflow" class="about-workflow-section">
+            <h2 class="section-title">MY WORKFLOW<span>.</span></h2>
+            <div class="workflow-grid">
+                <div class="workflow-column">
+                    <h3 class="workflow-header">01 // CREATE</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>GITHUB</li>
+                        <li>LENIS</li>
+                        <li>UI/UX Design</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
+                <div class="workflow-separator"></div>
+                <div class="workflow-column">
+                    <h3 class="workflow-header">02 // CODE</h3>
+                    <ul>
+                        <li>Next.js</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Version control</li>
+                        <li>GSAP</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="workflow-separator"></div>
+                <div class="workflow-column">
+                    <h3 class="workflow-header">03 // REFACTOR</h3>
+                    <ul>
+                        <li>Dynamic Mount</li>
+                        <li>API Pipelines</li>
+                        <li>Custom Hooks</li>
+                        <li>Performance Optimization</li>
+                        <li>Semantic Architecture</li>
+                        <li>Clean Patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-glass">
+                <div class="footer-top">
+                    <h2 class="footer-heading">READY TO <span class="text-accent">COLLABORATE?</span></h2>
+                    <p class="footer-sub">Let's build something exceptional together.</p>
+                </div>
+                
+                <div class="footer-contact-info">
+                    <a href="mailto:creative.hdmedia@gmail.com" class="footer-email">
+                        creative.hdmedia@gmail.com
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>SOCIALS</h4>
+                        <div class="social-links">
+                            <a href="#">GITHUB</a>
+                            <a href="#">LINKEDIN</a>
+                            <a href="#">INSTAGRAM</a>
+                            <a href="#">TWITTER</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>NAVIGATION</h4>
+                        <div class="nav-links-footer">
+                            <a href="index.html#home">HOME</a>
+                            <a href="index.html#projects">WORK</a>
+                            <a href="about.html#about">ABOUT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2024 <span class="text-accent">HD MEDIA™.</span> ALL RIGHTS RESERVED.</p>
+                    <p>CRAFTED WITH PRECISION BY <span class="text-accent">HD MEDIA™.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & Lenis Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="main.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>
