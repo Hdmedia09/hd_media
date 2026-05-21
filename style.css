@@ -622,3 +622,271 @@ a { text-decoration: none; color: inherit; }
 @media (hover: none) {
     .custom-cursor { display: none; }
 }
+
+/* About Page Specific Styles */
+.about-hero-section {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    padding: 10rem 10% 4rem; /* Consistent with hero section padding */
+    background-color: var(--bg);
+    gap: 5%;
+}
+
+.about-hero-left {
+    flex: 1;
+    max-width: 55%;
+}
+
+.about-hero-title {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--text);
+}
+
+.about-hero-title span {
+    color: var(--accent);
+}
+
+.about-hero-right {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.developer-manifest-card {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+    overflow: hidden;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: #d1d1d1;
+}
+
+.manifest-header {
+    background: #1e1e1e;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    border-bottom: 1px solid #333;
+}
+
+.manifest-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: #888;
+}
+
+.manifest-body {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Syntax Highlighting for Manifest */
+.manifest-body code {
+    color: #ce9178; /* String color */
+}
+.manifest-body pre {
+    color: #9cdcfe; /* Key color */
+}
+#local-time, #local-time-home {
+    color: var(--accent);
+}
+.about-brief {
+    margin-top: 2rem;
+    color: var(--neutral);
+    font-size: 1.1rem;
+    max-width: 450px;
+}
+
+.manifest-body pre {
+    margin: 0;
+}
+
+/* Section 2: Interactive Timelines */
+.about-journey-section {
+    padding: 80px 10%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content to equalize negative space */
+    gap: 48px;
+}
+
+.timeline-stack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    gap: 32px;
+}
+
+.timeline-row {
+    display: grid;
+    grid-template-columns: 80px 40px 1fr;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid #222222;
+    opacity: 0; /* Hidden initially for GSAP animation */
+}
+
+.timeline-year {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    color: #555555;
+    font-weight: bold;
+}
+
+.timeline-row[data-year="2024"] .timeline-year {
+    color: #FF5700;
+    font-weight: 900;
+}
+
+.timeline-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+.timeline-icon-box svg {
+    width: 24px;
+    height: 24px;
+}
+
+.timeline-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.milestone-title {
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.milestone-description {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+/* Section 3: Workflow Matrix */
+.about-workflow-section {
+    padding: 10rem 10%;
+    background-color: var(--bg);
+}
+
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 3rem;
+}
+
+.workflow-column {
+    padding: 0 1rem;
+}
+
+.workflow-separator {
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.workflow-column:first-child .workflow-separator {
+    display: none; /* Hide separator for the first column */
+}
+
+.workflow-header {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.workflow-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.workflow-column li {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 0.8rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.workflow-column li:hover {
+    opacity: 1;
+    color: var(--accent);
+}
+
+/* Responsive adjustments for About page */
+@media (max-width: 1024px) {
+    .about-hero-section {
+        flex-direction: column;
+        padding: 8rem 5% 4rem;
+    }
+    .about-hero-left, .about-hero-right {
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .about-hero-title {
+        margin-bottom: 3rem;
+    }
+    .timeline-grid, .workflow-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .timeline-content {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 2rem;
+    }
+    .workflow-separator {
+        display: none;
+    }
+    .workflow-column {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+    .developer-manifest-card {
+        font-size: 0.75rem;
+    }
+    .timeline-year-item {
+        font-size: 1.5rem;
+    }
+    #timeline-detail {
+        font-size: 1rem;
+    }
+    .workflow-header {
+        font-size: 0.8rem;
+    }
+    .workflow-column li {
+        font-size: 1rem;
+    }
+}
